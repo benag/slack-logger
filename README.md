@@ -22,3 +22,4 @@ slackLogger.config({
    devChannel: '#dev',
    prodChannel: '#production'
 });
+
