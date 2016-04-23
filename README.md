@@ -13,6 +13,7 @@ npm install slack-logger
 
 How to Use
 ===========
+```
 slackLogger = require('slack-logger');
 slackLogger.config({
    logger:logger,
@@ -23,3 +24,4 @@ slackLogger.config({
    prodChannel: '#production'
 });
 
+```
