@@ -11,8 +11,8 @@ var Slack = require('slack-node');
 
 var LogManager = {};
 
-LogManager.msgSlack = true;
-LogManager.msgLogger = true;
+LogManager.msgSlack = false;
+LogManager.msgLogger = false;
 LogManager.Method = 'slack';
 LogManager.slackDevChannel = '#dev';
 LogManager.slackProdChannel = '#production';
@@ -26,6 +26,8 @@ LogManager.env = 'development';
 
  */
 LogManager.config = function (options){
+    LogManager.env = process.env.NODE_ENV;
+    if (options.env != undefined) LogManager.env = options.env;
     if (options.logger != undefined) LogManager.logger = options.logger;
     if (options.method != undefined) LogManager.Method = options.method;
     if (options.msgSlack != undefined) LogManager.msgSlack = options.msgSlack;
@@ -33,7 +35,7 @@ LogManager.config = function (options){
     if (options.devChannel != undefined) LogManager.slackDevChannel = options.devChannel;
     if (options.prodChannel != undefined) LogManager.slackProdChannel = options.prodChannel;
     if (options.webhookUri != undefined) LogManager.webhookUri = options.webhookUri;
-    LogManager.env = process.env.NODE_ENV;
+
     //if (LogManager.env != 'production') LogManager.env = 'development';
 
 };

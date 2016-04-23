@@ -2,11 +2,12 @@ var slackLogger = require('slack-logger');
 
 slackLogger.config({
     method:'slack',
-
+    msgSlack: true,
     webhookUri: '*******************',
     enableMsg: true,
     devChannel: '#dev',
-    prodChannel: '#production'
+    prodChannel: '#production',
+    env: 'development'
 });
 
-slackLogger.restart();
+slackLogger.info('test slack logger');
