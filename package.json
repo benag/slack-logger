@@ -1,0 +1,27 @@
+{
+  "name": "slack-logger",
+  "version": "1.0.0",
+  "description": "Logger that uses slack and predefined logger like winston to log errors and restart events.",
+  "main": "LogManager.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benag/slack-logger.git"
+  },
+  "keywords": [
+    "logger",
+    "slack",
+    "winston"
+  ],
+  "author": "Ben goldenberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benag/slack-logger/issues"
+  },
+  "homepage": "https://github.com/benag/slack-logger",
+  "dependencies": {
+    "slack-node": "^0.2.0"
+  }
+}
