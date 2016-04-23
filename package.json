@@ -1,6 +1,6 @@
 {
   "name": "slack-logger",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Logger that uses slack and predefined logger like winston to log errors and restart events.",
   "main": "LogManager.js",
   "scripts": {
