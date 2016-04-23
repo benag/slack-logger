@@ -15,7 +15,7 @@ LogManager.GlobalMsg = true;
 LogManager.Method = 'slack';
 LogManager.slackDevChannel = '#dev';
 LogManager.slackProdChannel = '#production';
-LogManager.webhookUri = "https://hooks.slack.com/services/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";
+LogManager.webhookUri = "";
 LogManager.slack = new Slack();
 LogManager.slack.setWebhook(LogManager.webhookUri);
 LogManager.env = 'development';
